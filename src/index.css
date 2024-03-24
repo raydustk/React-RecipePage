@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: local('BebasNeue'), 
+       url('./assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+       url('./assets/fonts/BebasNeue-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Louis George Café';
+  src: local('Louis George Café'),
+       url('./assets/fonts/Louis George Cafe Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'The Bold Font';
+  src: local('The Bold Font'),
+       url('./assets/fonts/THE BOLD FONT - FREE VERSION - 2023.ttf') format('truetype');
+}
+
+
+.navbar-heading {
+  font-family: 'The Bold Font', sans-serif;
+  font-size: 3em;
+}
+
+
+.container {
+  padding: 4em;
+  margin: 0%;
+ 
+}
+.navbar {
+  color: rgb(255, 255, 255);
+  background: rgb(16,148,255);
+  background: linear-gradient(0deg, rgba(16,148,255,1) 78%, rgba(62,183,255,1) 100%);
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(103,114,191,0.63);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(103,114,191,0.63);
+  box-shadow: 0px 7px 5px 0px rgba(103,114,191,0.63);
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  width: 100vw; 
+  z-index: 1000; 
+  overflow-x: hidden;
+}
+
+
+
+
+.navbar-heading {
+  font-size: 24px;
+  margin: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+    width: 100%;
+    height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+  width: 100%;
+  height: auto;
+  }
+}
+
+.landing {
+ width: 100vw;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  position: relative;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-shadow: 0px 13px 12px 0px rgba(29,61,130,0.35);
+  -moz-box-shadow: 0px 13px 12px 0px rgba(29,61,130,0.35);
+  box-shadow: 0px 13px 12px 0px rgba(29,61,130,0.35);
+}
+
+.back-video {
+  position:relative;
+  object-fit: cover;
+  z-index: -1;
+  margin: 0%;
+  padding: 0%;
+  left: 0;
+  right: 0;
+  width: 100vw; 
+  overflow-x: hidden; 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0px 2px 2px #abd5ffde;
+  z-index: 1; 
+}
+
+.overlay-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.overlay-text p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.melo {
+  color: rgb(155, 255, 253);
+  
+}
+
+.pragma {
+  color: #6fb0ff;
+}
+
+
+.footer {
+  color: rgb(255, 255, 255);
+  background: rgb(16,148,255);
+  background: linear-gradient(0deg, rgba(16,148,255,1) 78%, rgba(62,183,255,1) 100%);
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0; 
+  width: 100vw; 
+  height: 30px;
+  overflow-x: hidden;
+}
+
+.footer-heading {
+  font-family: 'Louis George Café', sans-serif;
+  font-size: 20px;
+}
