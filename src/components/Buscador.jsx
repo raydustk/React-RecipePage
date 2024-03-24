@@ -5,7 +5,6 @@ const RecipeSearch = ({ recipes: initialRecipes, onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [recipesState, setRecipesState] = useState([]);
 
-    // Update recipesState whenever initialRecipes changes
     useEffect(() => {
         setRecipesState(initialRecipes.map(recipe => ({ ...recipe, showInstructions: false })));
     }, [initialRecipes]);
