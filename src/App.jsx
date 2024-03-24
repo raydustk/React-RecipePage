@@ -5,7 +5,7 @@ import MiApi from './components/MiApi';
 import Footer from './components/footer';
 
 const App = () => {
-    const [recipes, setRecipes] = useState([]);
+    const [setRecipes] = useState([]);
 
     return (
         <div>
