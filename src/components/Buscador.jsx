@@ -41,7 +41,7 @@ const RecipeSearch = ({ recipes: initialRecipes, onSearch }) => {
                     <div key={recipe.idMeal} className="recipe-card">
                         <img src={recipe.strMealThumb} alt={recipe.strMeal} />
                         <h3>{recipe.strMeal}</h3>
-                        <p className='ingredients'>Ingredients: {countIngredients(recipe)}</p>
+                        <p className='ingredients'>Ingredients: {recipe.ingredients.length}</p>
                         <p className="country">{recipe.strArea}</p>
                         {recipe.showInstructions && <p className='country small'>{recipe.strInstructions}</p>}
                         <button onClick={() => toggleInstructions(recipe.idMeal)}>
@@ -54,18 +54,4 @@ const RecipeSearch = ({ recipes: initialRecipes, onSearch }) => {
     );
 };
 
-const countIngredients = recipe => {
-    let count = 0;
-    for (let i = 1; i <= 20; i++) {
-        const ingredient = recipe[`strIngredient${i}`];
-        if (ingredient) {
-            count++;
-        } else {
-            break;
-        }
-    }
-    return count;
-};
-
 export default RecipeSearch;
-
